@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags de formulario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" placeholder="Digite seu nome">
+                </div>
+                <div class="coluna">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="email@email.com">
+                </div>
+            </div>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="Genero">Genero</label>
+                    <select id="genero">
+                        <option> Masculino</option>
+                        <option> Feminino</option>
+                        <option> Outros</option>
+                        <option> Prefiro nao informar</option>
+                    </select>
+                </div>
+                <div class="coluna">
+                    <label for="cpf">cpf</label>
+                    <input id="cpf" type="text" placeholder="000.000.000-21">
+                </div>
+                <div class="coluna">
+                    <label for="DataNascimento">Data de Nascimento</label>
+                    <input id="DataNascimento" type="date">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="Endereço">Endereço</label>
+                    <input type="text" name="" id="endereço">
+                </div>
+                <div class="coluna">
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" name="" id="cidade">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formação</legend>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="Unidade">Unidade</label>
+                    <select id="turno">
+                        <option> Aldeota</option>
+                        <option> Sul</option>
+                        <option> Norte</option>
+                    </select>
+                </div>
+                <div class="coluna">
+                    <label for="Curso">Curso</label>
+                    <select id="curso">
+                        <option> FullStack</option>
+                        <option> Marketing</option>
+                        <option> Data Analyti</option>
+                        <option> UI/UX</option>
+                    </select>
+                </div>
+                <div class="coluna">
+                    <label for="turno">Turno</label>
+                    <select id="turno">
+                        <option> Manha</option>
+                        <option> Tarde</option>
+                        <option> Noite</option>
+                        <option> Madrugada</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <button>
+            Cadastrar
+        </button>
+    </form>
+</body>
+
+</html>
